@@ -1,7 +1,7 @@
 # VM installation (Αν έχετε ήδη εγκατεστημένα Linux, πηγαίνετε κατευθείαν στο Εγκατάσταση του Contiki-NG σε Linux)
 
  Σε περίπτωση που δεν έχετε εγκατεστημένα Linux (και δεν επιθυμείτε να εγκαταστήσετε) ή MacOS, προτείνουμε να χρησιμοποιήσετε ένα από τα δύο VM για Windows και να εγκαταστήσετε ένα Linux image σε αυτά (προτείνουμε Ubuntu 22.04 LTS ή Ubuntu 20.04 LTS):
- 1.   VMWare (recommended)
+ 1.   VMWare (recommended, αν είναι εφικτό)
  2.   VirtualBox
 
 ## Προβλήματα εγκατάστασης Ubuntu σε VirtualBox VM
