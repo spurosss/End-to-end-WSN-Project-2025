@@ -112,13 +112,29 @@
     git submodule update --init --recursive     # Αυτό το βήμα θα πάρει ώρα
 ```
 
-## Install απαραίτητες βιβλιοθήκες (για Linux x64-bit)
+## Install απαραίτητες βιβλιοθήκες (για Linux x64-bit, αν είναι απαραίτητο)
 
-Για το sky architecture το Contiki-NG, είναι απαραίτητο να εγκατασταθούν κάποιες βιβλιοθήκες για αρχιτεκτονικές x32-bit, έτσι ώστε να μπορεί να γίνει το compilation για sky architercture, σε περίπτωση που έχετε εγκατεστημένα Linux χ64-bit (το ποιο πιθανό).
+Αν το compile και upload αποτύχουν λόγω dependencies για το sky architecture το Contiki-NG, τότε είναι απαραίτητο να εγκατασταθούν κάποιες βιβλιοθήκες για αρχιτεκτονικές x32-bit, έτσι ώστε να μπορεί να γίνει το compilation για sky architercture, σε περίπτωση που έχετε εγκατεστημένα Linux χ64-bit (το ποιο πιθανό).
 
 Σε αυτή τη περίπτωση, εκτελέστε τα παρακάτω:
 ```bash
     sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1:i386
+```
+Μπορεί κάποιες από αυτές τις βιβλιοθήκες να μην κατέβουν, οπότε ενδεχομένως να μην έχετε περαιτέρω προβλήματα. Εξαρτάται από την έκδοση των Linux χρησιμοποιείται
+
+## python.Serial
+
+Αν το compile αποτύχει λόγω τις βιβλιοθήκης Serial της Python, τότε πρέπει να εκτελέσετε τα παρακάτω:
+
+```bash
+	pip uninstall pyserial
+	pip install pyserial
+```
+ή
+
+```bash
+	pip uninstall pyserial3
+	pip install pyserial3
 ```
 
 # Σχόλια φοιτητή για τα βήματα που ακολουθήθηκαν
