@@ -12,7 +12,7 @@
 
 /* Configuration */
 #define SEND_INTERVAL (8 * CLOCK_SECOND)
-static linkaddr_t dest_addr =         {{ 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }};
+static linkaddr_t dest_addr =         {{ 0xa9, 0xb0, 0x60, 0x13, 0x00, 0x74, 0x12, 0x00 }};
 
 #if MAC_CONF_WITH_TSCH
 #include "net/mac/tsch/tsch.h"
