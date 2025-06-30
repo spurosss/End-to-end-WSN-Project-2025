@@ -44,7 +44,7 @@ def main():
     # Forecast the same number of steps as the test set
     forecast = model_fit.forecast(steps=len(test))
 
-    # Drop any NaNs from forecast or test (just in case)
+    # Drop any NaNs from forecast or test
     forecast = np.array(forecast)
     test = np.array(test)
     mask = ~np.isnan(forecast) & ~np.isnan(test)
