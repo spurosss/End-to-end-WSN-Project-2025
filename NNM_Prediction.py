@@ -1,3 +1,5 @@
+#Run in Google Colab, couldnt download tensorflow
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -88,7 +90,7 @@ def plot_predictions(y_true, y_pred):
 
 
 def main(window_size=24):
-    # Upload file from local machine
+    # Upload file from local machine 
     uploaded = files.upload()
     csv_path = list(uploaded.keys())[0]
     sensor_col = 'temperature'
