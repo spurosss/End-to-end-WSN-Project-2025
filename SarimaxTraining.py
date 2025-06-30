@@ -87,10 +87,11 @@ def train_and_forecast(sensor: str):
 
 
 if __name__ == "__main__":
-    # For quick testing without argparse
-    sensor = "temperature"  # or "humidity"
+    
+    sensor = "temperature"  
     train_and_forecast(sensor)
-
+    
+#to choose other sensor:
 #if __name__ == "__main__":
 #    parser = argparse.ArgumentParser(description="SARIMAX Forecast for Sensor Data")
 #    parser.add_argument('--sensor', type=str, choices=['temperature', 'humidity'], required=True,
